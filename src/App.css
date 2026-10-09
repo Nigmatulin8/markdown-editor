@@ -1,0 +1,26 @@
+.background {
+  background-image: url("./assets/bg.jpg");
+  background-position: center;
+  background-size: cover;
+
+  flex-grow: 1;
+}
+
+.main-wrapper > div:not(:last-child) {
+  margin-right: 8px;
+}
+
+/* GitHub markdown is left-aligned. Tailwind preflight drops list markers and stacks images. */
+.markdown-body {
+  text-align: left;
+  letter-spacing: normal;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  list-style: revert;
+}
+
+.markdown-body img {
+  display: inline;
+}
